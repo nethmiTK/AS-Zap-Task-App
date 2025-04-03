@@ -4,11 +4,12 @@ import axios from 'axios';
 
 function Zapd() {
     const [tasks, setTasks] = useState([]);
-
-    useEffect(() => {
+    useEffect(() => {src/task-manager-backend
         axios.get('http://localhost:5000/tasks')
-            .then(response => setTasks(response.data));
-    }, []);
+            .then(response => setTasks(response.data))
+            .catch(error => console.error('Error fetching tasks:', error));
+    },  
+     []);
 
     return (
         <div className='p-10 bg-pink-300 min-h-screen'>
