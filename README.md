@@ -92,4 +92,3 @@ By the end of this task, team members should have learned:
 By working on this project, you will have the opportunity to enhance your skills in full-stack development, particularly with React and MongoDB. You will also gain experience in building a task management app, handling both front-end and back-end tasks, and integrating them seamlessly.
 
 Good luck, and let's create a seamless and efficient To-Do app together! 🚀
-
