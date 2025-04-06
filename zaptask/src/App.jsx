@@ -2,14 +2,13 @@ import React from 'react';
 import { Routes, Route } from 'react-router-dom';
  import TaskBitz from './pages/TaskBitz';
 import Zapd from './pages/Zapd';
-import './App.css';
-import TaskPage from './pages/TaskPage';
- 
+ import Home from './Home';
+  
 export default function App() {
   return (
     <div>
        <Routes>
-        <Route path="/" element={<TaskPage />} />
+        <Route path="/" element={<Home/>} />
         <Route path="/task-bitz" element={<TaskBitz />} />
         <Route path="/zapd" element={<Zapd />} />
       </Routes>
