@@ -1,30 +1,33 @@
 import React, { useState } from "react";
 import axios from "axios";
 
-function Create({ refreshTodos }) {
+function Create() {
   const [task, setTask] = useState("");
 
   const handleAdd = () => {
-    if (!task.trim()) return;
-    axios
-      .post("http://localhost:3001/add", { task: task })
+    if (task.trim() === "") return;
+    axios.post("http://localhost:3001/add", { task })
       .then(() => {
         setTask("");
-        refreshTodos(); // refresh the todo list without reloading the page
+        window.location.reload();
       })
       .catch((err) => console.log(err));
   };
 
   return (
-    <div className="create_form">
+    <div className="flex justify-center mb-4">
       <input
         type="text"
-        placeholder="Enter Task"
         value={task}
+        placeholder="Enter Task"
         onChange={(e) => setTask(e.target.value)}
+        className="border p-2 w-80"
       />
-      <button type="button" onClick={handleAdd}>
-        + Add Task
+      <button
+        onClick={handleAdd}
+        className="bg-black text-white px-4"
+      >
+        Add
       </button>
     </div>
   );
