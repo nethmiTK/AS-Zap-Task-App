@@ -25,35 +25,39 @@ function App() {
   };
 
   return (
-    <div className="flex flex-col items-center min-h-screen bg-white p-4">
-      <h1 className="text-3xl font-bold mb-6">Todo List</h1>
+    <div className="flex flex-col items-center min-h-screen bg-gradient-to-br from-pink-100 via-purple-100 to-white p-4">
+      <h1 className="text-4xl font-extrabold text-pink-600 mb-6">📋 My Todo List</h1>
+      <div className="bg-green-300 p-4">
+  <p>This should have a green background!</p>
+</div>
+
       <Create />
 
-      <div className="w-full max-w-md space-y-2">
+      <div className="w-full max-w-md space-y-3">
         {todos.length === 0 ? (
-          <p className="text-center text-gray-500">No tasks available</p>
+          <p className="text-center text-gray-400 italic">No tasks available</p>
         ) : (
           todos.map((todo) => (
             <div
               key={todo._id}
-              className="flex items-center justify-between bg-black text-white p-3 rounded"
+              className="flex items-center justify-between bg-white border-l-4 border-pink-500 p-4 rounded-xl shadow-sm hover:shadow-md transition"
             >
               <div
-                className="flex items-center gap-2 cursor-pointer"
+                className="flex items-center gap-3 cursor-pointer"
                 onClick={() => handleEdit(todo._id)}
               >
                 {todo.done ? (
-                  <BsCheckCircle className="text-xl" />
+                  <BsCheckCircle className="text-xl text-pink-500" />
                 ) : (
-                  <BsCircle className="text-xl" />
+                  <BsCircle className="text-xl text-gray-400" />
                 )}
-                <p className={todo.done ? "line-through" : ""}>
+                <p className={`text-md ${todo.done ? "line-through text-gray-400" : "text-gray-800"}`}>
                   {todo.task}
                 </p>
               </div>
               <BsTrash
                 onClick={() => handleDelete(todo._id)}
-                className="cursor-pointer text-xl hover:text-red-500"
+                className="cursor-pointer text-xl text-gray-400 hover:text-red-500 transition"
               />
             </div>
           ))
