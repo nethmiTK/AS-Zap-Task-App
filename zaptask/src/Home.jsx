@@ -2,7 +2,7 @@ import React, { useEffect, useState } from "react";
 import { BsCheckCircle, BsCircle, BsTrash } from "react-icons/bs";
 import axios from "axios";
 import Create from "./Create";
-import './Home.css';  // Use a relative path for the CSS file
+import './Home.css';  // Use the updated CSS file
 
 function App() {
   const [todos, setTodos] = useState([]);
@@ -27,6 +27,20 @@ function App() {
 
   return (
     <div className="flex flex-col items-center min-h-screen bg-white p-4">
+      {/* Animated motivational quotes */}
+      <div className="motivational-quotes">
+        <p>🔥 ZAP Task – Ignite Your Productivity</p>
+        <p>"Turn chaos into clarity, one task at a time."</p>
+        <p>⚡ ZAP It. Done.</p>
+        <p>"Every task checked off is a step closer to your goals. Stay sharp. Stay focused. Stay ZAP."</p>
+        <p>✅ Minimal Effort. Maximum Results.</p>
+        <p>"Productivity doesn't have to be complicated. With ZAP Task, it's clean, quick, and effective."</p>
+        <p>🚀 Task Today. Triumph Tomorrow.</p>
+        <p>"Small wins add up. Let ZAP Task help you build momentum and stay on track."</p>
+        <p>🎯 Your Focus Partner</p>
+        <p>"Distractions are everywhere. ZAP Task helps you focus on what matters most."</p>
+      </div>
+
       <h1 className="text-3xl font-bold mb-6">Todo List</h1>
       <Create />
 
@@ -59,6 +73,12 @@ function App() {
             </div>
           ))
         )}
+      </div>
+
+      {/* Second section with a dark box and stroke */}
+      <div className="second-section">
+        <h2>Stay on Track with ZAP Task</h2>
+        <p>Enhance your productivity, keep your focus, and manage your tasks with ease!</p>
       </div>
     </div>
   );
