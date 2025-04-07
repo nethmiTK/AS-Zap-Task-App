@@ -1,0 +1,62 @@
+/* Add Task Button */
+.add-task-btn {
+    background-color: #38B2AC;
+    color: white;
+    padding: 0.5rem 1rem;
+    border: none;
+    font-weight: bold;
+    border-radius: 0.25rem;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    margin-bottom: 1rem;
+  }
+  
+  .add-task-btn:hover {
+    background-color: #319795;
+  }
+  
+  /* Form Container */
+  .add-task-form {
+    display: flex;
+    justify-content: center;
+    gap: 0.5rem;
+    margin-bottom: 1.5rem;
+    animation: slideDown 0.4s ease;
+  }
+  
+  /* Input Field */
+  .add-task-input {
+    padding: 0.5rem;
+    width: 20rem;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+  }
+  
+  /* Submit Button */
+  .add-task-submit {
+    background-color: #1A202C;
+    color: white;
+    padding: 0.5rem 1rem;
+    border: none;
+    font-weight: bold;
+    border-radius: 0.25rem;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  .add-task-submit:hover {
+    background-color: #2D3748;
+  }
+  
+  /* Slide down animation */
+  @keyframes slideDown {
+    from {
+      transform: translateY(-10px);
+      opacity: 0;
+    }
+    to {
+      transform: translateY(0);
+      opacity: 1;
+    }
+  }
+  

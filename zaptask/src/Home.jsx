@@ -30,18 +30,10 @@ function App() {
       {/* Animated motivational quotes */}
       <div className="motivational-quotes">
         <p>🔥 ZAP Task – Ignite Your Productivity</p>
-        <p>"Turn chaos into clarity, one task at a time."</p>
-        <p>⚡ ZAP It. Done.</p>
-        <p>"Every task checked off is a step closer to your goals. Stay sharp. Stay focused. Stay ZAP."</p>
-        <p>✅ Minimal Effort. Maximum Results.</p>
-        <p>"Productivity doesn't have to be complicated. With ZAP Task, it's clean, quick, and effective."</p>
-        <p>🚀 Task Today. Triumph Tomorrow.</p>
-        <p>"Small wins add up. Let ZAP Task help you build momentum and stay on track."</p>
-        <p>🎯 Your Focus Partner</p>
-        <p>"Distractions are everywhere. ZAP Task helps you focus on what matters most."</p>
-      </div>
+         
+       </div>
 
-      <h1 className="text-3xl font-bold mb-6">Todo List</h1>
+      <h1 className="text-3xl font-bold mb-6">ZAP TASK</h1>
       <Create />
 
       <div className="w-full max-w-md space-y-2">
