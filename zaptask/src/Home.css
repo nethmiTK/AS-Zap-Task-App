@@ -1,0 +1,142 @@
+ /* General page styles */
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f5f5f5;
+    margin: 0;
+    padding: 0;
+  }
+  
+  /* Container for the app */
+  .flex {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    padding: 1rem;
+  }
+  
+  .flex-col {
+    flex-direction: column;
+  }
+  
+  .items-center {
+    align-items: center;
+  }
+  
+  .min-h-screen {
+    min-height: 100vh;
+  }
+  
+  .bg-white {
+    background-color: white;
+  }
+  
+  .p-4 {
+    padding: 1rem;
+  }
+  
+  /* Header */
+  .text-3xl {
+    font-size: 2rem;
+  }
+  
+  .font-bold {
+    font-weight: bold;
+  }
+  
+  .mb-6 {
+    margin-bottom: 1.5rem;
+  }
+  
+  /* Todo list styling */
+  .w-full {
+    width: 100%;
+  }
+  
+  .max-w-md {
+    max-width: 28rem;
+  }
+  
+  .space-y-2 {
+    margin-top: 0.5rem;
+  }
+  
+  .text-center {
+    text-align: center;
+  }
+  
+  .text-gray-500 {
+    color: #6b7280;
+  }
+  
+  /* Todo item card styles */
+  .bg-black {
+    background-color: black;
+  }
+  
+  .text-white {
+    color: white;
+  }
+  
+  .p-3 {
+    padding: 0.75rem;
+  }
+  
+  .rounded {
+    border-radius: 0.5rem;
+  }
+  
+  .flex {
+    display: flex;
+  }
+  
+  .items-center {
+    align-items: center;
+  }
+  
+  .justify-between {
+    justify-content: space-between;
+  }
+  
+  .gap-2 {
+    gap: 0.5rem;
+  }
+  
+  .cursor-pointer {
+    cursor: pointer;
+  }
+  
+  .text-xl {
+    font-size: 1.25rem;
+  }
+  
+  .hover\:text-red-500:hover {
+    color: #f87171;
+  }
+  
+  /* Task text styling */
+  .line-through {
+    text-decoration: line-through;
+  }
+  
+  /* Create button */
+  button {
+    padding: 0.5rem 1rem;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    border-radius: 0.25rem;
+    cursor: pointer;
+    font-weight: bold;
+    transition: background-color 0.3s;
+  }
+  
+  button:hover {
+    background-color: #45a049;
+  }
+  
+  /* Trash icon */
+  .text-red-500 {
+    color: #f87171;
+  }
+  

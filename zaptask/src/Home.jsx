@@ -2,6 +2,7 @@ import React, { useEffect, useState } from "react";
 import { BsCheckCircle, BsCircle, BsTrash } from "react-icons/bs";
 import axios from "axios";
 import Create from "./Create";
+import './Home.css';  // Use a relative path for the CSS file
 
 function App() {
   const [todos, setTodos] = useState([]);
