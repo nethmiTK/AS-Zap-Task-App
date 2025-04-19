@@ -1,4 +1,7 @@
-# Zap Task App
+💗 **Learn Point:**  
+**Loyalty — First, resolve your client's problem; second, be a brilliant performer.**
+ 
+
 
 ## Project Overview
 
