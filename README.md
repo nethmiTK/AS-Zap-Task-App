@@ -88,10 +88,4 @@ By the end of this task, team members should have learned:
 - **State Management**: Ensure state management is handled efficiently in React (useState, useEffect, context API, or Redux if needed).
 - **Security**: Make sure to sanitize inputs and handle any security concerns in the backend (e.g., SQL injection prevention).
 
----
 
-## Learning Goals
-
-By working on this project, you will have the opportunity to enhance your skills in full-stack development, particularly with React and MongoDB. You will also gain experience in building a task management app, handling both front-end and back-end tasks, and integrating them seamlessly.
-
-Good luck, and let's create a seamless and efficient To-Do app together! 🚀
